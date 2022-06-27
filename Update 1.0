@@ -1,0 +1,13 @@
+temperature_addition = 32
+temperature_multiplication = 1.8
+
+print("Please state if you wish to enter a value in Celsius or Fahrenheit.")
+temp_type = input().lower()
+if str(temp_type) == "celsius":
+    celsius_temperature = float(input("Please Enter a Value in Celsius: "))
+    true_fahrenheit = (celsius_temperature * temperature_multiplication) + temperature_addition
+    print(true_fahrenheit)
+elif str(temp_type) == "fahrenheit":
+    Fahrenheit_temperature = float(input("Please Enter a Value in Fahrenheit: "))
+    true_celsius = (Fahrenheit_temperature - temperature_addition) * temperature_multiplication
+    print(true_celsius)
